@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@theme {
+    --font-montserrat: Montserrat, sans-serif;
+    --text-title: 35px;
+    --color-mainBg: #FFFFFF;
+    --color-mainBg-inv: #101E42;
+    --color-mainBg-inv-light: #1C294B;
+    --color-elemColor: #FC4022;
+    --color-glassWhite: rgba(255, 255, 255, .5);
+    --color-elem-lightBall: rgba(252, 64, 34, .2);
+    --radius-stdRadius: 50px;
+    --margin-section: 50px;
+}
+
+@layer components {
+    .app {
+        @apply font-montserrat text-lg
+    }
+
+    .main-container {
+        @apply max-w-[1250px] mx-auto px-[10px]
+    }
+
+    .full-container {
+        @apply max-w-[1920px] mx-auto px-[10px]
+    }
+
+    .button {
+        @apply max-w-[200px] w-full p-[15px] rounded-stdRadius bg-mainBg text-mainBg-inv font-extrabold text-xl cursor-pointer
+    }
+
+    .title {
+        @apply text-title text-pretty font-extrabold leading-[43px]
+    }
+
+    .smallTitle{
+        @apply text-3xl font-extrabold text-pretty
+    }
+
+    .img {
+        @apply w-full h-full object-cover
+    }
+
+    .lightBall {
+        @apply absolute w-[300px] h-[300px] blur-[50px] rounded-full bg-elem-lightBall
+    }
+}
