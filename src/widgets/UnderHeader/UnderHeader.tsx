@@ -26,15 +26,15 @@ export const UnderHeader = () => {
           <div>
             <div className="max-w-[700px] mb-[20px]">
               <h2 className="relative title mb-[35px]">
-                Siti Scommesse non AAMS che pagano subito
+                Beste casino zonder vergunning in Nederland 2025
                 <div className="absolute bottom-[-15px] left-0 w-[85px] h-[8px] bg-elemColor rounded-[10px]"></div>
               </h2>
               <p className="text-pretty">
-                Siti Scommesse non AAMS che pagano subito sono la scelta
-                migliore per gli scommettitori italiani! Abbiamo intervistato i
-                clienti dei siti non AAMS e consultato l’opinione di 3 esperti
-                autorevoli per creare una classifica dei migliori bookmaker
-                online 👇
+                Online gokken bij een casino zonder vergunning in Nederland
+                klinkt misschien gek, maar steeds meer gokkers kiezen ervoor.
+                Waarom? Dankzij het ruime aanbod unieke spellen, betere bonussen
+                en andere uitgebreide mogelijkheden. In dit artikel ontdek je
+                welke casino’s zonder Nederlandse vergunning het beste zijn.
               </p>
             </div>
             <div>

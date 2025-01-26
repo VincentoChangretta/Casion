@@ -4,15 +4,35 @@
 @theme {
     --font-montserrat: Montserrat, sans-serif;
     --text-title: 35px;
-    --color-mainBg: #FFFFFF;
-    --color-mainBg-inv: #101E42;
-    --color-mainBg-inv-light: #1C294B;
-    --color-elemColor: #FC4022;
-    --color-glassWhite: rgba(255, 255, 255, .5);
-    --color-elem-lightBall: rgba(252, 64, 34, .2);
-    --radius-stdRadius: 50px;
-    --margin-section: 50px;
+    
+    /* Цвета */
+    --color-mainBg: #FFFFFF; /* основной фон */
+    --color-mainBg-inv: #101E42; /* темный фон */
+    --color-mainBg-inv-light: #1C294B; /* светлый темный фон */
+    --color-elemColor: #FC4022; /* основной элемент - оранжевый */
+    --color-cyanBg: #C8D2EC; /* светлый голубой фон */
+    --color-cyanBg-dark: #1E73BE; /* темный голубой фон */
+    --color-blackWO: rgba(0, 0, 0, .08); /* черный с прозрачностью */
+    --color-glassWhite: rgba(255, 255, 255, .5); /* полупрозрачный белый */
+    --color-elem-lightBall: rgba(252, 64, 34, .2); /* полупрозрачный оранжевый для элементов */
+    
+    /* Цвета для таблицы */
+    --color-table-bg: #F9FAFB; /* светлый фон таблицы */
+    --color-table-border: #E5E7EB; /* светлый цвет границ */
+    --color-table-header-bg: #F1F5F9; /* фон для заголовков таблицы */
+    --color-table-header-text: #1F2937; /* цвет текста в заголовке */
+    --color-table-row-hover: #F3F4F6; /* цвет фона строки при наведении */
+    --color-text-primary: #1F2937; /* основной цвет текста */
+    --color-text-secondary: #4B5563; /* второстепенный цвет текста */
+    --color-link: #2563EB; /* цвет для ссылок */
+    
+    /* Радиус */
+    --radius-stdRadius: 50px; /* стандартный радиус для округления */
+    
+    /* Отступы */
+    --margin-section: 50px; /* отступы для секций */
 }
+
 
 @layer components {
     .app {

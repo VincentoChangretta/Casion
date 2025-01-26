@@ -12,9 +12,21 @@ export interface Promotion {
 export const promotions: Promotion[] = [
   {
     date: "24/12/2024",
+    bonus: "200% Welkomstbonus tot €7.500 + 10% 🌟",
+    cashback: "Cashback 10%",
+    rating: 10,
+    img: "https://casinozondervergunning.net/wp-content/uploads/2024/08/instantcasino_animated-1.svg",
+    features: [
+      "Verschillende betaalmethodes als Google Pay en Apple Pay",
+      "Zet tot wel €4000 in",
+      "Wekelijks een 10% cashback op gemaakte verliezen",
+    ],
+  },
+  {
+    date: "24/12/2024",
     bonus: "Bonus esclusivo: 500€ + 200 Giri Gratis 🌟",
     cashback: "Cashback 25%",
-    rating: 9.5,
+    rating: 9.9,
     img: "https://casinozondervergunning.net/wp-content/uploads/2024/08/instantcasino_animated-1.svg",
     features: [
       "Registrazione rapida in 1 clic",
@@ -26,7 +38,7 @@ export const promotions: Promotion[] = [
     date: "26/01/2025",
     bonus: "Bonus esclusivo: 500€ + 200 Free Spins 💎",
     cashback: "Cashback 15%",
-    rating: 8.9,
+    rating: 9.8,
     img: "https://casinozondervergunning.net/wp-content/uploads/2024/08/instantcasino_animated-1.svg",
     features: [
       "Pagamenti immediati",
@@ -38,7 +50,7 @@ export const promotions: Promotion[] = [
     date: "24/01/2025",
     bonus: "300% Bonus fino a 3.000€ ➕ 300 Giri Gratis",
     additionalBonus: "Bonus 100% fino a 500€",
-    rating: 9.2,
+    rating: 9.5,
     img: "https://casinozondervergunning.net/wp-content/uploads/2024/08/instantcasino_animated-1.svg",
     features: [
       "Affascinanti croupier live al tavolo",
@@ -60,7 +72,7 @@ export const promotions: Promotion[] = [
     date: "2/02/2025",
     bonus: "500€ + 100 Giri Gratis!",
     additionalBonus: "Bonus di ricarica €700 + 50 giri gratis",
-    rating: 8.7,
+    rating: 8.9,
     img: "https://casinozondervergunning.net/wp-content/uploads/2024/08/instantcasino_animated-1.svg",
     features: [
       "Slot innovative ed esclusive",
@@ -71,7 +83,7 @@ export const promotions: Promotion[] = [
     date: "3/02/2025",
     bonus: "Fino a 2.000€ + 800 Giri Gratis",
     additionalBonus: "Bonus fino a €500 nel Casinò",
-    rating: 8.8,
+    rating: 8.9,
     img: "https://casinozondervergunning.net/wp-content/uploads/2024/08/instantcasino_animated-1.svg",
     features: [
       "Promozione sportiva: 100% fino a €150",
@@ -82,7 +94,7 @@ export const promotions: Promotion[] = [
     date: "1/02/2025",
     bonus: "500€ + 200 Free Spins 💋",
     cashback: "Cashback 25%",
-    rating: 9.3,
+    rating: 8.8,
     img: "https://casinozondervergunning.net/wp-content/uploads/2024/08/instantcasino_animated-1.svg",
     features: [
       "Pagamenti ultra veloci",
@@ -94,7 +106,7 @@ export const promotions: Promotion[] = [
     date: "1/02/2025",
     bonus: "2.500€ + 200 Giri Gratis (⚠️ Promozione valida per 30 giorni)",
     additionalBonus: "Bonus nel Casinò di 2.500€",
-    rating: 9.4,
+    rating: 8.5,
     img: "https://casinozondervergunning.net/wp-content/uploads/2024/08/instantcasino_animated-1.svg",
     features: ["Bonus sportivo 100% fino a 150€", "Bonus weekend fino a €700"],
   },
@@ -102,7 +114,7 @@ export const promotions: Promotion[] = [
     date: "31/01/2025",
     bonus: "500€ + 200 Giri Gratis",
     cashback: "Cashback 25%",
-    rating: 8.6,
+    rating: 8.5,
     img: "https://casinozondervergunning.net/wp-content/uploads/2024/08/instantcasino_animated-1.svg",
     features: [
       "Slot uniche disponibili",
@@ -113,7 +125,7 @@ export const promotions: Promotion[] = [
     date: "1/02/2025",
     bonus: "500€ + 200 Giri Gratis",
     additionalBonus: "Bonus 100% fino a 500€",
-    rating: 9.1,
+    rating: 8.4,
     img: "https://casinozondervergunning.net/wp-content/uploads/2024/08/instantcasino_animated-1.svg",
     features: ["Pagamenti ultra veloci", "Registrazione immediata"],
   },
