@@ -7,7 +7,7 @@ import { InfoWindow } from "shared/UI/InfoWindow/InfoWindow";
 const personInfo =
   "Si invita a un gioco responsabile. Contenuti riservati ai maggiori di 18 anni. I link di affiliazione costituiscono materiale pubblicitario. L'utilizzo di questo sito implica l'accettazione di termini, condizioni generali e informativa sulla privacy.";
 
-export const MainPagePerson = () => {
+export const SitiPagePerson = () => {
   const [personInfoWindow, setPersonInfoWindow] = useState(false);
   const personRef = useRef<HTMLDivElement | null>(null);
 

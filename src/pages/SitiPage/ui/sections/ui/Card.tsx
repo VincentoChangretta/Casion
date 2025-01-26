@@ -1,5 +1,5 @@
 import { Promotion } from "pages/MainPage/data/data";
-import { FC, useState } from "react";
+import { FC } from "react";
 import { Button } from "shared/UI/Button/Button";
 import StarRatings from "react-star-ratings";
 
@@ -13,9 +13,9 @@ export const Card: FC<cardProps> = ({ data }) => {
     date,
     features,
     rating,
-    additionalBonus,
+    // additionalBonus,
     cashback,
-    validity,
+    // validity,
     img,
   } = data;
 

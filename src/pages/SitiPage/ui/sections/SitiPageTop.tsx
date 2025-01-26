@@ -1,7 +1,7 @@
-import { promotions } from "pages/MainPage/data/data";
+import { promotions } from "pages/SitiPage/data/data";
 import { Card } from "./ui/Card";
 
-export const MainPageTop = () => {
+export const SitiPageTop = () => {
   return (
     <section className="mb-section">
       <div className="main-container">

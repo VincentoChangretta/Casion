@@ -1,6 +1,19 @@
-import { bettingSites } from "pages/MainPage/data/tables";
+import { bettingSites } from "pages/SitiPage/data/tables";
 
-export const MainPageTables = () => {
+const sites: string[] = [
+  "Cobra",
+  "Boomerang",
+  "Sportaza",
+  "22bet",
+  "ZotaBet",
+  "Casinia",
+  "Legiano",
+  "Infinity",
+  "CrownPlay",
+  "Snatch",
+];
+
+export const SitiPageTables = () => {
   return (
     <section>
       <div className="main-container">
@@ -9,18 +22,7 @@ export const MainPageTables = () => {
             10 Migliori Siti Scommesse non AAMS
           </h2>
           <ul className="flex flex-wrap gap-5">
-            {[
-              "Cobra",
-              "Boomerang",
-              "Sportaza",
-              "22bet",
-              "ZotaBet",
-              "Casinia",
-              "Legiano",
-              "Infinity",
-              "CrownPlay",
-              "Snatch",
-            ].map((site, index) => {
+            {sites.map((site, index) => {
               const shade = 10 * (index % 2 === 0 ? 1 : -1);
               const backgroundColor = `hsl(200, 50%, ${50 + shade}%)`;
               return (

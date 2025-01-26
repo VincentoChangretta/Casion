@@ -1,24 +1,37 @@
+import { underHeaderDataTypes } from "pages/SitiPage/data/underHeader";
+import { FC } from "react";
 import { pokerIcon1, pokerIcon2, pokerIcon3, underHeader } from "shared/images";
 
-export const UnderHeader = () => {
-  const cardData = [
-    {
-      val: "30+",
-      name: "recensioni",
-      img: pokerIcon1,
-    },
-    {
-      val: "500€",
-      name: "Bonus fino",
-      img: pokerIcon2,
-    },
-    {
-      val: "1.000.000€",
-      name: "in tornei",
-      img: pokerIcon3,
-    },
-  ];
+interface UnderHeaderTypes {
+  data: underHeaderDataTypes;
+}
 
+interface cardDataTypes {
+  val: string;
+  name: string;
+  img?: string;
+}
+
+const cardData: cardDataTypes[] = [
+  {
+    val: "30+",
+    name: "recensioni",
+    img: pokerIcon1,
+  },
+  {
+    val: "500€",
+    name: "Bonus fino",
+    img: pokerIcon2,
+  },
+  {
+    val: "1.000.000€",
+    name: "in tornei",
+    img: pokerIcon3,
+  },
+];
+
+export const UnderHeader: FC<UnderHeaderTypes> = ({ data }) => {
+  const { title, description } = data;
   return (
     <div className="pt-[50px] bg-mainBg-inv text-mainBg">
       <div className="main-container">
@@ -26,16 +39,10 @@ export const UnderHeader = () => {
           <div>
             <div className="max-w-[700px] mb-[20px]">
               <h2 className="relative title mb-[35px]">
-                Beste casino zonder vergunning in Nederland 2025
+                {title}
                 <div className="absolute bottom-[-15px] left-0 w-[85px] h-[8px] bg-elemColor rounded-[10px]"></div>
               </h2>
-              <p className="text-pretty">
-                Online gokken bij een casino zonder vergunning in Nederland
-                klinkt misschien gek, maar steeds meer gokkers kiezen ervoor.
-                Waarom? Dankzij het ruime aanbod unieke spellen, betere bonussen
-                en andere uitgebreide mogelijkheden. In dit artikel ontdek je
-                welke casino’s zonder Nederlandse vergunning het beste zijn.
-              </p>
+              <p className="text-pretty">{description}</p>
             </div>
             <div>
               <ul className="flex gap-[5px]">
