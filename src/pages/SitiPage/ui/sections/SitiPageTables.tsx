@@ -1,3 +1,4 @@
+import { CasinoTopList } from "pages/GlobalSections/CasinoTopList";
 import { bettingSites } from "pages/SitiPage/data/tables";
 
 const sites: string[] = [
@@ -17,27 +18,7 @@ export const SitiPageTables = () => {
   return (
     <section>
       <div className="main-container">
-        <div className="mb-[30px]">
-          <h2 className="smallTitle text-3xl mb-[20px] text-text-primary">
-            10 Migliori Siti Scommesse non AAMS
-          </h2>
-          <ul className="flex flex-wrap gap-5">
-            {sites.map((site, index) => {
-              const shade = 10 * (index % 2 === 0 ? 1 : -1);
-              const backgroundColor = `hsl(200, 50%, ${50 + shade}%)`;
-              return (
-                <li
-                  key={index}
-                  className="max-w-fit p-4 text-3xl text-mainBg ease-in-out"
-                  style={{ backgroundColor }}
-                >
-                  {index + 1}. {site}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-
+        <CasinoTopList data={sites} />
         {bettingSites.map((site, index) => (
           <div
             key={index}

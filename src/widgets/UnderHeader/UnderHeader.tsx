@@ -33,7 +33,7 @@ const cardData: cardDataTypes[] = [
 export const UnderHeader: FC<UnderHeaderTypes> = ({ data }) => {
   const { title, description } = data;
   return (
-    <div className="pt-[50px] bg-mainBg-inv text-mainBg">
+    <div className="pt-[50px] bg-mainBg-inv text-mainBg mb-[30px]">
       <div className="main-container">
         <div className="flex items-start justify-between">
           <div>

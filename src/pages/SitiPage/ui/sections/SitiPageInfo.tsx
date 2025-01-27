@@ -1,4 +1,10 @@
-import { bestFeatures, bettingFeatures, miglioriSiti, miglioriSitiSicuri, paymentMethods } from "pages/SitiPage/data/info";
+import {
+  bestFeatures,
+  bettingFeatures,
+  miglioriSiti,
+  miglioriSitiSicuri,
+  paymentMethods,
+} from "pages/SitiPage/data/info";
 
 export const SitiPageInfo = () => {
   return (
@@ -8,7 +14,7 @@ export const SitiPageInfo = () => {
           <h2 className="smallTitle mb-[20px] text-text-primary">
             Migliori Siti non AAMS del 2025
           </h2>
-          <ul className="flex flex-col gap-[10px] mb-[30px]">
+          <ul className="list-disc flex flex-col gap-[10px] mb-[30px]">
             {miglioriSiti.map((site, index) => (
               <li
                 key={index}
@@ -24,7 +30,7 @@ export const SitiPageInfo = () => {
             <h2 className="smallTitle mb-[20px] text-text-primary">
               Quali sono i Migliori Siti di Scommesse non AAMS?
             </h2>
-            <ul className="flex flex-col gap-[5px] mb-[30px]">
+            <ul className="list-disc flex flex-col gap-[5px] mb-[30px]">
               {bettingFeatures.map((feature, index) => (
                 <li
                   className="p-[5px] bg-white text-color-text-primary rounded-lg  "
@@ -40,7 +46,7 @@ export const SitiPageInfo = () => {
             <h2 className="smallTitle mb-[20px] text-text-primary">
               Quali sono i Migliori Siti non AAMS Sicuri?
             </h2>
-            <ul className="flex flex-col gap-[10px] mb-[30px]">
+            <ul className="list-disc flex flex-col gap-[10px] mb-[30px]">
               {miglioriSitiSicuri.map((site, index) => (
                 <li
                   key={index}
@@ -71,13 +77,13 @@ export const SitiPageInfo = () => {
                 <h4 className="text-2xl font-extrabold mb-[30px] text-text-primary">
                   {section.title}
                 </h4>
-                <ul className="flex flex-col gap-[10px]">
+                <ul className="list-disc flex flex-col gap-[10px]">
                   {section.items.map((item, itemIndex) => (
                     <li
                       className="p-[5px] bg-white text-color-text-primary rounded-lg  "
                       key={itemIndex}
                     >
-                      — {item}
+                      {item}
                     </li>
                   ))}
                 </ul>

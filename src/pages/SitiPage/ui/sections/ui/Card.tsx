@@ -1,7 +1,7 @@
-import { Promotion } from "pages/MainPage/data/data";
 import { FC } from "react";
 import { Button } from "shared/UI/Button/Button";
 import StarRatings from "react-star-ratings";
+import { Promotion } from "pages/GlobalSections/data/data";
 
 interface cardProps {
   data: Promotion;
