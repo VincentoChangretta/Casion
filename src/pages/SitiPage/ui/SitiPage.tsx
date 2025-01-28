@@ -5,8 +5,9 @@ import { SitiPageTables } from "./sections/SitiPageTables";
 import { SitiUnderHeaderData } from "../data/underHeader";
 import { CasinoListSection } from "pages/GlobalSections/CasinoListSection";
 import { promotions } from "../../GlobalSections/data/data";
+import { SitePageLT } from "./sections/SitePageLT";
 
-const SitiPage = () => {
+export const SitiPage = () => {
   return (
     <>
       <UnderHeader data={SitiUnderHeaderData} />
@@ -17,8 +18,7 @@ const SitiPage = () => {
       />
       <SitiPageTables />
       <SitiPageInfo />
+      <SitePageLT />
     </>
   );
 };
-
-export default SitiPage;

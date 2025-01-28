@@ -14,10 +14,10 @@ export const CasinoListTables = () => {
           <table className="min-w-full table-auto">
             <tbody>
               <tr className="border-t border-gray-200">
-                <td className="px-6 py-4 font-semibold text-gray-700 bg-gray-50">
+                <td className="px-6 py-4 text-center font-semibold text-gray-700 bg-gray-50 max-500:px-2 max-500:text-sm">
                   Pro
                 </td>
-                <td className="px-6 py-4 text-gray-600">
+                <td className="px-6 py-4 text-gray-600 max-500:px-2 max-500:text-sm">
                   <ul className="list-disc pl-6">
                     {site.pros.map((item, idx) => (
                       <li key={idx} className="py-1">
@@ -28,11 +28,11 @@ export const CasinoListTables = () => {
                 </td>
               </tr>
               <tr className="border-t border-gray-200">
-                <td className="px-6 py-4 font-semibold text-gray-700 bg-gray-50">
+                <td className="px-6 py-4 text-center font-semibold text-gray-700 bg-gray-50 max-500:px-2 max-500:text-sm ">
                   Contro
                 </td>
                 <td className="px-6 py-4 text-gray-600">
-                  <ul className="list-disc pl-6">
+                  <ul className="list-disc pl-6 max-500:px-2 max-500:text-sm">
                     {site.cons.map((item, idx) => (
                       <li key={idx} className="py-1">
                         {item}

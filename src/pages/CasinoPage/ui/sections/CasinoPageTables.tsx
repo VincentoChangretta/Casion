@@ -1,10 +1,10 @@
 import { CasinoTopList } from "pages/GlobalSections/CasinoTopList";
-import { CasinoListTables } from "./CasinoListTables";
+import { CasinoListTables } from "./Tables/CasinoListTables";
 import { casinoSites } from "pages/CasinoPage/data/CasinoListTables.data";
-import { CasinoProControTable } from "./CasinoProControTable";
-import { CasinoMigloriTable } from "./CasinoMigloriTable";
-import { CasinoPageUnderTableInfo } from "./СasinoPageUnderTableInfo";
-import { CasinoPageLT } from "./CasinoPageLT";
+import { CasinoProControTable } from "./Tables/CasinoProControTable";
+import { CasinoMigloriTable } from "./Tables/CasinoMigloriTable";
+import { CasinoPageUnderTableInfo } from "./Tables/СasinoPageUnderTableInfo";
+import { CasinoPageLT } from "./Tables/CasinoPageLT";
 
 
 export const CasinoPageTables = () => {

@@ -5,51 +5,48 @@
     --font-montserrat: Montserrat, sans-serif;
     --text-title: 35px;
 
-    /* Цвета */
     --color-mainBg: #FFFFFF;
-    /* основной фон */
     --color-mainBg-inv: #101E42;
-    /* темный фон */
     --color-mainBg-inv-light: #1C294B;
-    /* светлый темный фон */
+    --color-mainBg-inv-dark: #091023;
     --color-elemColor: #FC4022;
-    /* основной элемент - оранжевый */
     --color-cyanBg: #C8D2EC;
-    /* светлый голубой фон */
     --color-cyanBg-dark: #1E73BE;
-    /* темный голубой фон */
     --color-blackWO: rgba(0, 0, 0, .08);
-    /* черный с прозрачностью */
     --color-glassWhite: rgba(255, 255, 255, .5);
-    /* полупрозрачный белый */
     --color-elem-lightBall: rgba(252, 64, 34, .2);
-    /* полупрозрачный оранжевый для элементов */
-
-    /* Цвета для таблицы */
-    --color-table-bg: #F9FAFB;
-    /* светлый фон таблицы */
-    --color-table-border: #E5E7EB;
-    /* светлый цвет границ */
-    --color-table-header-bg: #F1F5F9;
-    /* фон для заголовков таблицы */
-    --color-table-header-text: #1F2937;
-    /* цвет текста в заголовке */
-    --color-table-row-hover: #F3F4F6;
-    /* цвет фона строки при наведении */
-    --color-text-primary: #1F2937;
-    /* основной цвет текста */
-    --color-text-secondary: #4B5563;
-    /* второстепенный цвет текста */
-    --color-link: #2563EB;
-    /* цвет для ссылок */
-
-    /* Радиус */
     --radius-stdRadius: 50px;
-    /* стандартный радиус для округления */
-
-    /* Отступы */
     --margin-section: 50px;
-    /* отступы для секций */
+    /* --color-table-bg: #F9FAFB;
+    --color-table-border: #E5E7EB;
+    --color-table-header-bg: #F1F5F9;
+    --color-table-header-text: #1F2937;
+    --color-table-row-hover: #F3F4F6;
+    --color-text-primary: #1F2937;
+    --color-text-secondary: #4B5563;
+    --color-link: #2563EB; */
+
+    /* media */
+
+    --breakpoint-1200: 1200px;
+    --breakpoint-1175: 1175px;
+    --breakpoint-1150: 1150px;
+    --breakpoint-1050: 1050px;
+    --breakpoint-950: 950px;
+    --breakpoint-860: 860px;
+    --breakpoint-810: 810px;
+    --breakpoint-635: 635px;
+    --breakpoint-530: 530px;
+    --breakpoint-500: 500px;
+    --breakpoint-475: 475px;
+    --breakpoint-435: 435px;
+    --breakpoint-425: 425px;
+    --breakpoint-400: 400px;
+    --breakpoint-380: 380px;
+    --breakpoint-340: 340px;
+
+
+
 }
 
 
@@ -66,8 +63,16 @@
         @apply max-w-[1920px] mx-auto px-[10px]
     }
 
+    .noScroll {
+        overflow: hidden;
+    }
+
     .button {
         @apply max-w-[200px] w-full p-[15px] rounded-stdRadius bg-mainBg text-mainBg-inv font-extrabold text-xl cursor-pointer
+    }
+
+    .closeButton {
+        @apply absolute flex justify-center items-center top-[20px] right-[20px] w-[40px] h-[40px] rounded-full bg-mainBg text-elemColor font-extrabold cursor-pointer
     }
 
     .title {
@@ -75,7 +80,7 @@
     }
 
     .smallTitle {
-        @apply text-3xl font-extrabold text-pretty
+        @apply text-3xl font-extrabold text-pretty max-500:text-2xl
     }
 
     .img {
@@ -85,4 +90,5 @@
     .lightBall {
         @apply absolute w-[300px] h-[300px] blur-[50px] rounded-full bg-elem-lightBall
     }
+    
 }

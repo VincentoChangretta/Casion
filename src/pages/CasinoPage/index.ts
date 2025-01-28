@@ -1,3 +1,3 @@
-import { CasinoPageAsync as CasinoPage } from "./ui/CasinoPage.async";
+import { CasinoPage } from "./ui/CasinoPage";
 
 export { CasinoPage };

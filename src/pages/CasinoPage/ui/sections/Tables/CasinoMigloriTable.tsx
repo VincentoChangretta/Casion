@@ -52,23 +52,32 @@ const casinos = [
 export const CasinoMigloriTable = () => {
   return (
     <section className="mb-8 bg-white rounded-lg shadow-md overflow-hidden">
-      <h2 className="text-3xl font-semibold text-gray-800 py-4 px-6 bg-gray-100">
+      <h2 className="smallTitle font-semibold text-gray-800 py-4 px-6 bg-gray-100 max-500:px-3">
         Migliori Casino Online Non AAMS nel 2025
       </h2>
       <table className="min-w-full table-auto">
         <thead>
-          <tr className="bg-gray-100 border-t border-b border-gray-200">
-            <th className="py-4 px-6 text-left text-gray-700">
+          <tr className="bg-gray-100 border-t border-b border-gray-200 max-500:text-sm">
+            <th className="py-4 px-6 text-left text-gray-700 max-500:px-3">
               Nome del Casinò
             </th>
-            <th className="py-4 px-6 text-left text-gray-700">Descrizione</th>
+            <th className="py-4 px-6 text-left text-gray-700 max-500:px-3">
+              Descrizione
+            </th>
           </tr>
         </thead>
         <tbody>
           {casinos.map((casino, index) => (
-            <tr key={index} className="border-t border-b border-gray-200">
-              <td className="py-4 px-6 text-gray-800">{casino.name}</td>
-              <td className="py-4 px-6 text-gray-600">{casino.description}</td>
+            <tr
+              key={index}
+              className="border-t border-b border-gray-200 max-500:text-sm"
+            >
+              <td className="py-4 px-6 text-gray-800  max-500:px-3">
+                {casino.name}
+              </td>
+              <td className="py-4 px-6 text-gray-600  max-500:px-3">
+                {casino.description}
+              </td>
             </tr>
           ))}
         </tbody>

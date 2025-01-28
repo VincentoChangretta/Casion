@@ -1,3 +1,4 @@
-import { SitiPageAsync as SitiPage } from "./ui/SitiPage.async";
+import { SitiPage } from "./ui/SitiPage";
+
 
 export { SitiPage };

@@ -1,5 +1,5 @@
 import { underHeaderDataTypes } from "pages/SitiPage/data/underHeader";
-import { FC } from "react";
+import { FC} from "react";
 import { pokerIcon1, pokerIcon2, pokerIcon3, underHeader } from "shared/images";
 
 interface UnderHeaderTypes {
@@ -32,10 +32,11 @@ const cardData: cardDataTypes[] = [
 
 export const UnderHeader: FC<UnderHeaderTypes> = ({ data }) => {
   const { title, description } = data;
+
   return (
-    <div className="pt-[50px] bg-mainBg-inv text-mainBg mb-[30px]">
+    <div className="py-[50px] bg-mainBg-inv text-mainBg mb-[30px]">
       <div className="main-container">
-        <div className="flex items-start justify-between">
+        <div className="flex items-start justify-between max-950:flex-col max-950:items-center">
           <div>
             <div className="max-w-[700px] mb-[20px]">
               <h2 className="relative title mb-[35px]">
@@ -45,11 +46,11 @@ export const UnderHeader: FC<UnderHeaderTypes> = ({ data }) => {
               <p className="text-pretty">{description}</p>
             </div>
             <div>
-              <ul className="flex gap-[5px]">
+              <ul className="flex gap-[5px] max-1175:flex-wrap max-950:justify-center">
                 {cardData.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-start gap-[17px] max-w-[270px] w-full bg-mainBg-inv-light pl-[17px] py-[13px] rounded-[4px]"
+                    className="shrink-0 flex items-start gap-[17px] max-w-[230px] w-full bg-mainBg-inv-light pl-[17px] py-[13px] rounded-[4px]"
                   >
                     <div className="pt-[10px]">
                       <img

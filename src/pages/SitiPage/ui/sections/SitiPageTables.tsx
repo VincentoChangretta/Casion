@@ -31,12 +31,12 @@ export const SitiPageTables = () => {
               <tbody>
                 {site.details.map((detail, idx) => (
                   <tr key={idx} className="border-t border-gray-200">
-                    <td className="px-6 py-4 font-semibold text-gray-700 bg-gray-50">
+                    <td className="px-6 py-4 text-center font-semibold text-gray-700 bg-gray-50 max-500:px-2 max-500:text-sm ">
                       {detail.title}
                     </td>
-                    <td className="px-6 py-4 text-gray-600">
+                    <td className="px-6 py-4 text-gray-600 max-500:px-2 max-500:text-sm ">
                       {Array.isArray(detail.content) ? (
-                        <ul className="list-disc pl-6">
+                        <ul className="list-disc pl-6 max-500:pl-4">
                           {detail.content.map((item, idx) => (
                             <li key={idx} className="py-1">
                               {item}
